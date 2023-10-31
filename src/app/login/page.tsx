@@ -1,5 +1,7 @@
 export default function LoginPage () {
     return (
-        <h1>Hello world</h1>
+        <div>
+            <h1>Login page</h1>
+        </div>
     )
 }
