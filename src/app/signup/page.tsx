@@ -13,8 +13,15 @@ export default function SignupPage () {
     });
 
     const [buttonDisabled, setButtonDisabled] = React.useState(false);
+    const [loading, setLoading] = React.useState(false);
 
-    const onSignup = async () => {}
+    const onSignup = async () => {
+        try {
+            
+        } catch (error) {
+            
+        }
+    }
 
     useEffect(() => {
         if (user.email.length > 0 && user.password.length > 0 && user.username.length > 0) {
@@ -28,7 +35,7 @@ export default function SignupPage () {
         <div className="flex flex-col items-center justify-center min-h-screen py-2">
             <div className="border border-white p-10 rounded-lg">
                 <div className="flex flex-col items-center justify-center">
-                    <h1>Sign Up</h1>
+                    <h1>{loading ? "Processing" : "Sign Up"}</h1>
                     <hr />
                     <label htmlFor="username">Username: </label>
                     <input className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 text-black" id="username" type="text" value={user.username} onChange={(e) => setUser({...user, username: e.target.value})} placeholder="Enter the username" />
