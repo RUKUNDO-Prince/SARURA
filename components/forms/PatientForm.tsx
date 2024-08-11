@@ -69,7 +69,7 @@ const PatientForm = () => {
           control={form.control}
           name="phone"
           label="Phone number"
-          placeholder="(555) 123-4567"
+          placeholder="(250) 123-456-789"
         />
 
         <Button>Get Started</Button>
