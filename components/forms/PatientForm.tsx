@@ -9,34 +9,47 @@ import { Form } from "@/components/ui/form";
 import CustomFormField from "../CustomFormField";
 import { Button } from "../ui/button";
 import SubmitButton from "../SubmitButton";
+import { userFormValidation } from "@/lib/validation";
 
 export enum FormFieldType {
-    INPUT = 'input',
-    TEXTAREA = 'textarea',
-    PHONE_INPUT = 'phoneInput',
-    CHECKBOX = 'checkbox',
-    DATE_PICKER = 'datePicker',
-    SELECT = 'select',
-    SKELETON = 'skeleton'
+  INPUT = "input",
+  TEXTAREA = "textarea",
+  PHONE_INPUT = "phoneInput",
+  CHECKBOX = "checkbox",
+  DATE_PICKER = "datePicker",
+  SELECT = "select",
+  SKELETON = "skeleton",
 }
 
-const formSchema = z.object({
-    username: z.string().min(2),
-});
-
-
 const PatientForm = () => {
+  const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
 
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const form = useForm<z.infer<typeof userFormValidation>>({
+    resolver: zodResolver(userFormValidation),
     defaultValues: {
-        username: "",
+      name: "",
+      email: "",
+      phone: "",
     },
   });
 
-  function onSubmit () {
-    
+  async function onSubmit({
+    name,
+    email,
+    phone,
+  }: z.infer<typeof userFormValidation>) {
+    setIsLoading(true);
+
+    try {
+      // const userData = { name, email, phone };
+
+      // const user = await createUser(userData);
+
+      // if (user) router.push(`/patients/${user.$id}/register`);
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   return (
