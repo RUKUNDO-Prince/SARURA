@@ -140,7 +140,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-medium">Call Us</p>
-                      <a href="tel:+250780000000" className="text-gray-600 hover:text-sarura-500 transition-colors">+250 780 000 000</a>
+                      <a href="tel:+250784148374" className="text-gray-600 hover:text-sarura-500 transition-colors">+250 784 148 374</a>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4 group">
