@@ -203,7 +203,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <a 
-                  href="tel:+250780000000"
+                  href="tel:+250784148374"
                   className="btn-hover mt-4 w-full flex items-center justify-center border border-sarura-500 text-sarura-500 px-5 py-3 rounded-lg text-base font-medium hover:bg-sarura-50 transition-all duration-300 transform hover:scale-[1.02]"
                 >
                   Call Support Team
