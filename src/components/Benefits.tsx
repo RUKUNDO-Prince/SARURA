@@ -79,7 +79,7 @@ const Benefits = () => {
     <section id="benefits" className="py-20 bg-black relative" ref={sectionRef}>
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden -z-10">
-        <div className="absolute top-0 right-0 w-full h-full bg-[url('https://img.freepik.com/free-photo/landscape-field_422131-8.jpg?t=st=1742464552~exp=1742468152~hmac=7a8a9afc35cdfeadcabfe69b964b3c8dbc4e0ddf598e1eb49c3737d9f1b8e93c&w=2000')] opacity-[60%] bg-cover bg-center"></div>
+        <div className="absolute top-0 right-0 w-full h-full bg-[url('https://plus.unsplash.com/premium_photo-1676236297596-59f23505b6bf')] opacity-[50%] bg-cover bg-center"></div>
       </div>
       
       <div className="container mx-auto px-4 md:px-6">
