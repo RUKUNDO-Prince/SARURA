@@ -130,7 +130,7 @@ const CTA = () => {
                 <div className="relative bg-gray-900 rounded-[2.5rem] p-3 shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500">
                   <div className="bg-black rounded-[2rem] overflow-hidden aspect-[9/19]">
                     <img
-                      src="https://images.unsplash.com/photo-1530759766718-1bca00afe4f0?auto=format&fit=crop&w=800&h=1800&q=80"
+                      src="/addimage.png"
                       alt="Sarura mobile app showing crop monitoring interface"
                       className="w-full h-full object-cover"
                     />
